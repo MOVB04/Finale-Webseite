@@ -260,7 +260,7 @@
             const cartDetails = cart.map(item => `Menge: ${item.menge}, Preis: €${item.preis.toFixed(2)}`).join('\n');
             const totalPrice = cart.reduce((total, item) => total + item.preis, 0) + 4.99;
 
-            emailjs.send("service_mxa8z77", "template_y4asyuv", {
+            emailjs.send("service_5qhv7y4", "template_y4asyuv", {
                 user_name: name,
                 user_email: email,
                 user_address: address,
@@ -271,7 +271,7 @@
                 console.log("E-Mail an Admin gesendet.");
             }).catch(error => console.error("Fehler:", error));
 
-            emailjs.send("service_mxa8z77", "template_xmlonot", {
+            emailjs.send("service_5qhv7y4", "template_xmlonot", {
                 user_name: name,
                 user_adresse: address,
                 user_postal_code: postalCode,
